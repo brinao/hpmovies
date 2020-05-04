@@ -111,7 +111,7 @@ iframe {
 
 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     div.card0 { width: 100%;}
     div.card1 { width: 100%;}
     div.card2 { width: 100%;}
