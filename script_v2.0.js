@@ -127,7 +127,7 @@ for (let i = 0; i < hpmovie.movies.length; i++) {
             card.appendChild(age);
             card.appendChild(trailer);
 
-            //Her indsættes hver kort i container.
+            //Her indsættes hver kort i container elementet.
             container.appendChild(card);
         })
 
@@ -136,7 +136,7 @@ for (let i = 0; i < hpmovie.movies.length; i++) {
             // Do something for an error here
             //console.log('error' + err);
             const errorMessage = document.createElement('marquee');
-            errorMessage.textContent = "Gah, it's not working!";
+            errorMessage.textContent = "Sorry, something went wrong.";
             app.appendChild(errorMessage);
         })
 }
