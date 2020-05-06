@@ -108,7 +108,7 @@ for (let i = 0; i < hpmovie.movies.length; i++) {
             //Her dannes variablen "age" og sætter indholdet til at være en tekststreng som
             // beskriver filmens udgivelsesår samt hvor gammel den er i forhold til nuværende år.
             const age = document.createElement('age');
-            age.textContent = 'The movie was made in ' + movie.Year + ' which makes it ' + ("2020" - movie.Year) + ' years old';
+            age.textContent = 'The movie was made in ' + movie.Year + ' which makes it ' + (new Date().getFullYear() - movie.Year) + ' years old';
 
             //Her dannes variablen "rate" og sætter indholdet til at være IMDB raten fra fetchen.
             const rate = document.createElement('rate');
