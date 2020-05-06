@@ -104,6 +104,7 @@ for (let i = 0; i < hpmovie.movies.length; i++) {
             //Man kunne have brugt elementet "poster" fra Fetchen, men jeg brød mig ikke om disse posters.
             const picture = document.createElement('img');
             picture.setAttribute('src', hpmovie.movies[i].picture);
+            picture.alt = "Movie Poster";
 
             //Her dannes variablen "age" og sætter indholdet til at være en tekststreng som
             // beskriver filmens udgivelsesår samt hvor gammel den er i forhold til nuværende år.
@@ -117,7 +118,7 @@ for (let i = 0; i < hpmovie.movies.length; i++) {
             //Her dannes variablen "trailer" og sætter indholdet til at være videoen fra youtubeid'et i hpmovie variablen.
             const trailer = document.createElement('iframe');
             trailer.setAttribute('src',('https://www.youtube.com/embed/' + hpmovie.movies[i].youtubeid));
-
+            trailer.title = "Youtube Trailer";
 
 
             // Her sørges for at hver kort indeholder titel, rate, billede, udgivelsesår/alder samt trailer.
